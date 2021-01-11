@@ -1,8 +1,8 @@
 import Home from './pages/home';
 import Header from './components/header';
 import {Route} from 'react-router-dom';
-import Card from './pages/cart'
-import './scss/app.scss'
+import Cart from './pages/cart';
+import './scss/app.scss';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
        <div className="wrapper">
       <Header />
       <Route exact path='/' render={Home} />
-      <Route  path='/card' render={Card} />
+      <Route  path='/cart' render={Cart} />
     </div>
    </div>
   )
