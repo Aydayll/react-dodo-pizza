@@ -1,7 +1,7 @@
 import Home from './pages/home';
 import Header from './components/header';
-import {Route} from 'react-router-dom';
 import Cart from './pages/cart';
+import {Route} from 'react-router-dom';
 import './scss/app.scss';
 
 const App = () => {
@@ -9,8 +9,8 @@ const App = () => {
     <div className="App">
        <div className="wrapper">
       <Header />
-      <Route exact path='/' render={Home} />
-      <Route  path='/cart' render={Cart} />
+      <Route exact path='/' component={Home} />
+      <Route  path='/cart' component={Cart} />
     </div>
    </div>
   )
