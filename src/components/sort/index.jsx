@@ -1,10 +1,24 @@
-import React from 'react'
+import React from 'react';
+
 
 const Sort = () => {
-    return (
+    const [activeItem, setActiveItem] = React.useState(0);
+    const [activePopUp, setActivePopUp] = React.useState(false);
+    const sortRef = React.useRef();
+    const sortNames = ['популярности', 'цене', 'алфавиту'];
+    const handleActivePopUp = () => setActivePopUp(activePopUp ? false : true);
+    const handleClickOutside = (event) => {
+        if (!event.path.includes(sortRef.current)) {
+            setActivePopUp(false);
+        }
+    }
+    React.useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
 
-        <div class='sort'>
-            <div class='sort__label'>
+    }, [])
+    return (
+        <div ref={sortRef} className='sort'>
+            <div onClick={handleActivePopUp} className='sort__label'>
                 <svg
                     width='10'
                     height='6'
@@ -17,18 +31,26 @@ const Sort = () => {
                     />
                 </svg>
                 <b>Сортировка по:</b>
-                <span>популярности</span>
+                <span>{sortNames[activeItem]}</span>
             </div>
-            <div class='sort__popup'>
-                <ul>
-                    <li class='active'>популярности</li>
-                    <li>цене</li>
-                    <li>алфавиту</li>
-                </ul>
-            </div>
+            {activePopUp && (
+                <div className='sort__popup'>
+                    <ul>
+                        {sortNames.map((item, index) => (
+                            <li
+                                onClick={() => {
+                                    setActivePopUp(false);
+                                    setActiveItem(index);
+                                }}
+                                className={`${setActiveItem === index ? 'active' : ''}`}>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </div>
-
-    )
-}
+    );
+};
 
 export default Sort;
