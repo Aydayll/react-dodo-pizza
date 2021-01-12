@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Categories = () => {
+const Categories = ({items}) => {
     return (
         <div class='categories'>
         <ul>
-            <li class='active'>Все</li>
-            <li>Мясные</li>
-            <li>Вегетарианская</li>
-            <li>Гриль</li>
-            <li>Острые</li>
-            <li>Закрытые</li>
+            {items.map((item)=>{
+                    {item}
+             <li>
+
+             </li>
+            })}
         </ul>
     </div>
     )

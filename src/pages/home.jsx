@@ -16,7 +16,7 @@ const Home = () => {
             <div className='content'>
                 <div className='container'>
                     <div className='content__top'>
-                        <Categories />
+                        <Categories items={['Мясные', 'Вегетарианская', 'Гриль', 'Острые','Закрытые' ]}/>
                         <Sort />
                     </div>
                     <h2 className='content__title'>Все пиццы</h2>
