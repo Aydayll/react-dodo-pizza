@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Sort = () => {
     const [activeItem, setActiveItem] = React.useState(0);
     const [activePopUp, setActivePopUp] = React.useState(false);
