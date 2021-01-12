@@ -7,7 +7,7 @@ const Categories = ({items}) => {
             {items.map((item)=>{
                     {item}
              <li>
-
+                
              </li>
             })}
         </ul>
