@@ -1,6 +1,5 @@
 import React from 'react';
 import Types from './types';
-import Sizes from './sizes';
 
 const pizzaItem = ({ name, imageUrl, price, types, sizes }) => {
     return (
@@ -13,7 +12,6 @@ const pizzaItem = ({ name, imageUrl, price, types, sizes }) => {
             <h4 className='pizza-block__title'>{name}</h4>
             <div className='pizza-block__selector'>
                 <Types types={types} />
-                <Sizes sizes={sizes} />
                 <ul>
                     <li className='active'>тонкое</li>
                     <li>традиционное</li>
@@ -46,5 +44,4 @@ const pizzaItem = ({ name, imageUrl, price, types, sizes }) => {
 
     )
 }
-
 export default pizzaItem;

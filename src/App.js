@@ -3,6 +3,7 @@ import Header from './components/header';
 import Cart from './pages/cart';
 import {Route} from 'react-router-dom';
 import './scss/app.scss';
+import {createStore} from 'redux';
 
 const App = () => {
   return (
