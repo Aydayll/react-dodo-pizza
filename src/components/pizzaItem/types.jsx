@@ -14,6 +14,7 @@ const Types = ({ types }) => {
                         active: activeItem === index,
                         disable: !types.includes(index),
                     })}>
+                        {item}
                 </li>
             })}
         </ul>

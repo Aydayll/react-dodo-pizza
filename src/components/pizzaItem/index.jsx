@@ -1,6 +1,6 @@
 import React from 'react';
 import Types from './types';
-
+import Sizes from './sizes';
 const pizzaItem = ({ name, imageUrl, price, types, sizes }) => {
     return (
         <div className='pizza-block'>
