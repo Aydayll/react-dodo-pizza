@@ -4,25 +4,25 @@ import CartItem from '../components/cartItem';
 const Cart = () => {
   const obj = [
     {
-      name: 'Султан',
+      name: 'Айдай',
       price: '3',
       type: 'традиционное',
       size: '26',
     },
     {
-      name: 'Султан',
+      name: 'Айдай',
       price: '3',
       type: 'традиционное',
       size: '26',
     },
     {
-      name: 'Султан',
+      name: 'Айдай',
       price: '3',
       type: 'традиционное',
       size: '26',
     },
     {
-      name: 'Султан',
+      name: 'Айдай',
       price: '3',
       type: 'традиционное',
       size: '26',

@@ -9,14 +9,16 @@ const Home = () => {
   const [snacks, setSnacks] = React.useState([]);
   const [search, setSearch] = React.useState('');
   const [desserts, setDesserts] = React.useState([]);
-
+  const [drinks, setDrinks] = React.useState([]);
+  
   React.useEffect(() => {
     fetch('http://localhost:3000/db.json')
       .then((response) => response.json())
-      .then(({ pizzas, snacks, desserts }) => {
+      .then(({ pizzas, snacks, desserts, drinks }) => {
         setSnacks(snacks);
         setPizzas(pizzas);
         setDesserts(desserts);
+        setDrinks(drinks);
       });
   }, []);
 
@@ -67,6 +69,20 @@ const Home = () => {
         <h2 className='content__title'>Десерты</h2>
         <div className='content__items'>
           {desserts
+            .filter((item) => {
+              if (search === '') {
+                return item;
+              } else if (item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+                return item;
+              }
+            })
+            .map((item) => {
+              return <Item {...item} />;
+            })}
+        </div>
+        <h2 className='content__title'>Напитки</h2>
+        <div className='content__items'>
+          {drinks
             .filter((item) => {
               if (search === '') {
                 return item;
