@@ -336,44 +336,42 @@
             "description": "Микс рулетиков со сгущенным молоком: 8 штук с ананасом и корицей, 8 штук с брусникой",
             "price": 415,
             "category": 0,
-
-
             "rating": 8
         }
     ],
-    "drinks": [{
+    "others": [{
             "id": 0,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/fb874c95-cf53-49d2-af67-26e4473d7af7.jpg",
-            "name": "Coca-cola",
-            "description": "1 л",
-            "price": 139,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/7066c1ee6ab040e789bac4aac2b22219_292x292.jpeg",
+            "name": "Антисептик для рук",
+            "description": "В заказ можно добавить только 1 антисептик. Мы ввели это условие, чтобы как можно больше людей смогли купить его по разумной цене. Берегите себя и друг друга.",
+            "price": 75,
             "category": 0,
             "rating": 4
         },
         {
             "id": 1,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/ef14c3e8-3c66-40ed-bf53-beb302d650bc.jpg",
-            "name": "Coca-cola",
-            "description": "0,5 л",
-            "price": 139,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/6e030599a999452497b87ffaeba43460_292x292.jpeg",
+            "name": "Кофе в зернах, 250 г",
+            "description": "100% арабика с нотками карамели, шоколада и грецкого ореха. Обжарка темнее среднего. Выращен в Бразилии",
+            "price": 275,
             "category": 1,
             "rating": 6
         },
         {
             "id": 2,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/803abbc5-da00-49a0-9f7a-d4acae99befb.jpg",
-            "name": "Фанта",
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/71db9ca58d2649368edcf3ab41620991_292x292.jpeg",
+            "name": "Зеленый чай Richard, 10 пирамидок, 10 шт",
             "description": "1 л",
-            "price": 139,
+            "price": 69,
             "category": 0,
             "rating": 4
         },
         {
             "id": 3,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/7b775316-1d12-4850-9768-946a9bd700fe.jpg",
-            "name": "Фанта",
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/142dea908aa24ab3983d15706bf25469_292x292.jpeg",
+            "name": "Чай черный Richard, 10 пирамидок, 10 шт",
             "description": "0,5 л",
-            "price": 139,
+            "price": 69,
             "category": 2,
             "rating": 2
         },
@@ -449,5 +447,115 @@
             "category": 0,
             "rating": 8
         }
-    ]
+    ],
+    "drinks": [{
+        "id": 0,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/fb874c95-cf53-49d2-af67-26e4473d7af7.jpg",
+        "name": "Coca-cola",
+        "description": "1 л",
+        "price": 139,
+        "category": 0,
+        "rating": 4
+    },
+    {
+        "id": 1,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/ef14c3e8-3c66-40ed-bf53-beb302d650bc.jpg",
+        "name": "Coca-cola",
+        "description": "0,5 л",
+        "price": 139,
+        "category": 1,
+        "rating": 6
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/803abbc5-da00-49a0-9f7a-d4acae99befb.jpg",
+        "name": "Фанта",
+        "description": "1 л",
+        "price": 139,
+        "category": 0,
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/7b775316-1d12-4850-9768-946a9bd700fe.jpg",
+        "name": "Фанта",
+        "description": "0,5 л",
+        "price": 139,
+        "category": 2,
+        "rating": 2
+    },
+    {
+        "id": 4,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/eac8a5df-1ec2-4bc8-9be1-d9eb2deebd6a.jpg",
+        "name": "Спрайт",
+        "description": "1 л",
+        "price": 129,
+        "category": 3,
+        "rating": 8
+    },
+    {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/155b4ba9-3fd3-4992-8ec9-326638b3e2ee.jpg",
+        "name": "Спрайт",
+        "description": "0,5 л",
+        "price": 129,
+        "category": 0,
+        "rating": 2
+    },
+    {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/400bbeff-f4b9-4d2f-8366-5cdfdbbcf9e0.jpg",
+        "name": "Чай холодный Fuse Tea Лимон",
+        "description": "1 л",
+        "price": 275,
+        "category": 0,
+        "rating": 9
+    },
+    {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/8109c32c-6abe-4f3b-8313-d49e49b953c1.jpg",
+        "name": "БонАква негаз",
+        "description": "1 л",
+        "price": 275,
+        "category": 1,
+        "rating": 10
+    },
+    {
+        "id": 8,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/4820929a-c899-4670-a63f-ca9907cc3dc2.jpg",
+        "name": "Сок Апельсин",
+        "description": "1 л",
+        "price": 395,
+        "category": 5,
+        "rating": 10
+    },
+    {
+        "id": 9,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/f612cbb8-dc38-4c3b-8201-e354b6fae9fb.jpg",
+        "name": "Сок Яблоко",
+        "description": "1 л",
+        "price": 285,
+        "category": 1,
+        "rating": 7
+    },
+    {
+        "id": 10,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/2239d196-a760-42d4-9c64-e90d43bc3153.jpg",
+        "name": "Сок Вишня",
+        "description": "1 л",
+        "price": 275,
+        "category": 2,
+        "rating": 2
+    },
+    {
+        "id": 11,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/dfe2da2c446246cab7c4b52fe27a81cc_233x233.jpeg",
+        "name": "Облепиховый пунш",
+        "description": "Согревающий напиток с сиропом из ягод облепихи и лимонного сока, 0,3 л",
+        "price": 415,
+        "category": 0,
+        "rating": 8
+    }
+]
+    
 }
