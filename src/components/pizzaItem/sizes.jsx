@@ -12,7 +12,6 @@ const Sizes = ({ sizes }) => {
           className={classNames({
             active: index === activeItem && sizes.includes(item),
             disable: !sizes.includes(item),
-
           })}>
           {item}
         </li>

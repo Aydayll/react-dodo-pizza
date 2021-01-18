@@ -29,13 +29,13 @@ const Cart = () => {
     },
   ];
   return (
-    <div class='content'>
-      <div class='container container--cart'>
-        <div class='cart'>
+    <div className='content'>
+      <div className='container container--cart'>
+        <div className='cart'>
           {obj.length > 0 && (
             <>
-              <div class='cart__top'>
-                <h2 class='content__title'>
+              <div className='cart__top'>
+                <h2 className='content__title'>
                   <svg
                     width='18'
                     height='18'
@@ -66,7 +66,7 @@ const Cart = () => {
                   </svg>
                   Корзина
                 </h2>
-                <div class='cart__clear'>
+                <div className='cart__clear'>
                   <svg
                     width='20'
                     height='20'
@@ -105,13 +105,13 @@ const Cart = () => {
                   <span>Очистить корзину</span>
                 </div>
               </div>
-              <div class='content__items'>
+              <div className='content__items'>
                 {obj.map((item) => (
                   <CartItem />
                 ))}
               </div>
-              <div class='cart__bottom'>
-                <div class='cart__bottom-details'>
+              <div className='cart__bottom'>
+                <div className='cart__bottom-details'>
                   <span>
                     {' '}
                     Всего пицц: <b>3 шт.</b>{' '}
@@ -121,8 +121,8 @@ const Cart = () => {
                     Сумма заказа: <b>900 ₽</b>{' '}
                   </span>
                 </div>
-                <div class='cart__bottom-buttons'>
-                  <a href='/' class='button button--outline button--add go-back-btn'>
+                <div className='cart__bottom-buttons'>
+                  <a href='/' className='button button--outline button--add go-back-btn'>
                     <svg
                       width='8'
                       height='14'
@@ -140,7 +140,7 @@ const Cart = () => {
 
                     <span>Вернуться назад</span>
                   </a>
-                  <div class='button pay-btn'>
+                  <div className='button pay-btn'>
                     <span>Оплатить сейчас</span>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const Cart = () => {
           )}
         </div>
         {obj.length === 0 && (
-          <div class='cart cart--empty'>
+          <div className='cart cart--empty'>
             <h2>
               Корзина пустая <icon>😕</icon>
             </h2>
@@ -159,7 +159,7 @@ const Cart = () => {
               Для того, чтобы заказать пиццу, перейди на главную страницу.
             </p>
             <img src={emptyCart} alt='Empty cart' />
-            <a href='/' class='button button--black'>
+            <a href='/' className='button button--black'>
               <span>Вернуться назад</span>
             </a>
           </div>

@@ -6,6 +6,7 @@ import Categories from '../components/categories';
 import {addPizzaToCart} from '../redux/actions/cart';
 
 const Home = () => {
+  console.log(addPizzaToCart)
   const [pizzas, setPizzas] = React.useState([]);
   const [snacks, setSnacks] = React.useState([]);
   const [search, setSearch] = React.useState('');
