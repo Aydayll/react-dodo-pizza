@@ -10,15 +10,17 @@ const Home = () => {
   const [search, setSearch] = React.useState('');
   const [desserts, setDesserts] = React.useState([]);
   const [drinks, setDrinks] = React.useState([]);
+  const [others, setOthers] = React.useState([]);
   
   React.useEffect(() => {
     fetch('http://localhost:3000/db.json')
       .then((response) => response.json())
-      .then(({ pizzas, snacks, desserts, drinks }) => {
+      .then(({ pizzas, snacks, desserts, drinks, others }) => {
         setSnacks(snacks);
         setPizzas(pizzas);
         setDesserts(desserts);
         setDrinks(drinks);
+        setOthers(others);
       });
   }, []);
 
@@ -86,7 +88,21 @@ const Home = () => {
             .filter((item) => {
               if (search === '') {
                 return item;
-              } else if (item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+              } else if (item.name.toLowerCase().includes(search.toLowerCase())) {
+                return item;
+              }
+            })
+            .map((item) => {
+              return <Item {...item} />;
+            })}
+        </div>
+        <h2 className='content__title'>Другое</h2>
+        <div className='content__items'>
+          {others
+            .filter((item) => {
+              if (search === '') {
+                return item;
+              } else if (item.name.toLowerCase().includes(search.toLowerCase())) {
                 return item;
               }
             })
