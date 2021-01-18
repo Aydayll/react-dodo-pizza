@@ -41,6 +41,7 @@ const Sort = () => {
                                     setActivePopUp(false);
                                     setActiveItem(index);
                                 }}
+                                key={index}
                                 className={`${setActiveItem === index ? 'active' : ''}`}>
                                 {item}
                             </li>

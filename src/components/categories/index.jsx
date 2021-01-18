@@ -8,6 +8,7 @@ const Categories = ({ items }) => {
             <ul>
                 {items.map((item, index) => {
                    return  <li
+                   key={index}
                         onClick={() => handleClickActive(index)}
                         className={itemActive === index ? 'active' : ''}>
                         {item}

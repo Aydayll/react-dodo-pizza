@@ -3,6 +3,7 @@ import PizzaItem from '../components/pizzaItem';
 import Item from '../components/item';
 import Sort from '../components/sort';
 import Categories from '../components/categories';
+import {addPizzaToCart} from '../redux/actions/cart';
 
 const Home = () => {
   const [pizzas, setPizzas] = React.useState([]);
