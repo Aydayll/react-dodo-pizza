@@ -51,7 +51,7 @@ const Home = () => {
               }
             })
             .map((item) => {
-              return <PizzaItem {...item} />;
+              return <PizzaItem key ={item.id}{...item} />;
             })}
         </div>
         <h2 className='content__title'>Закуски</h2>
@@ -65,7 +65,7 @@ const Home = () => {
               }
             })
             .map((item) => {
-              return <Item {...item} />;
+              return <Item key ={item.id}{...item} />;
             })}
         </div>
         <h2 className='content__title'>Десерты</h2>
@@ -79,7 +79,7 @@ const Home = () => {
               }
             })
             .map((item) => {
-              return <Item {...item} />;
+              return <Item key ={item.id}{...item} />;
             })}
         </div>
         <h2 className='content__title'>Напитки</h2>
@@ -93,7 +93,7 @@ const Home = () => {
               }
             })
             .map((item) => {
-              return <Item {...item} />;
+              return <Item key ={item.id}{...item} />;
             })}
         </div>
         <h2 className='content__title'>Другое</h2>
@@ -107,7 +107,7 @@ const Home = () => {
               }
             })
             .map((item) => {
-              return <Item {...item} />;
+              return <Item key ={item.id}{...item} />;
             })}
         </div>
       </div>
