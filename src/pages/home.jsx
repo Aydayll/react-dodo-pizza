@@ -46,7 +46,7 @@ const Home = () => {
             .filter((item) => {
               if (search === '') {
                 return item;
-              } else if (item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+              } else if (item.name.toLowerCase().includes(search.toLocaleLowerCase())) {
                 return item;
               }
             })
@@ -60,7 +60,7 @@ const Home = () => {
             .filter((item) => {
               if (search === '') {
                 return item;
-              } else if (item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+              } else if (item.name.toLowerCase().includes(search.toLocaleLowerCase())) {
                 return item;
               }
             })
@@ -74,7 +74,7 @@ const Home = () => {
             .filter((item) => {
               if (search === '') {
                 return item;
-              } else if (item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+              } else if (item.name.toLowerCase().includes(search.toLocaleLowerCase())) {
                 return item;
               }
             })
