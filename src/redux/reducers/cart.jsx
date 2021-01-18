@@ -1,4 +1,4 @@
-const cart= null
+const cart= () =>{}
 
 
 export default cart;

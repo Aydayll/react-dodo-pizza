@@ -1,4 +1,4 @@
-const filter= null
+const filter= () =>{}
 
 
 export default filter;

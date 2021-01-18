@@ -1,4 +1,4 @@
-const pizzas= null
+const pizzas= () =>{}
 
 
 export default pizzas;
